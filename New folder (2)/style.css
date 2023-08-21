@@ -1,0 +1,206 @@
+/*basic style*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+
+
+
+}
+
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+
+section {
+    position: relative;
+    padding: 15px;
+    margin-top: 26px;
+    margin-left: 447px;
+    width: 90%;
+}
+
+p {
+    position: relative;
+    clear: center;
+
+}
+
+
+div {
+    /*    float: right;  */
+    position: relative;
+    /*border: black;*/
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.sub1 {
+    float: right;
+    width: 449px;
+    padding: 14px;
+    margin: -3px -3px 0px auto;
+    text-align: center;
+    font-size: 190%;
+    font-weight: bold;
+
+
+
+
+}
+
+
+
+
+.content {
+    padding: 6px;
+    border: none;
+    background-color: gray;
+    font-family: Helvetica;
+    text-align: center;
+    color: black;
+    margin: 3px;
+    height: 500px;
+    overflow: auto;
+
+}
+
+.row {
+    width: 90%;
+}
+
+
+/*icon Bar*/
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.bar1,.bar2,.bar3 {
+    /*float: left;*/
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin-right: 35px;
+    margin: 25px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+
+h2 {
+
+    background-color: gray;
+    padding: -25px;
+    text-align: left;
+    font-size: 30px;
+}
+
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+
+  /* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+   /*background-color: #333;*/    
+   /*padding-left: 33px;*/
+
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+
+
+
+/*desktop version*/
+@media (min-width: 992px) {
+    .column-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/*tablet version*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .colmn-md-6 {
+        float: left;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .colmn-md-12 {
+        float: left;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*mobile version*/
+@media (max-width: 767px) {
+    .colmn-sm-12 {
+        float: left;
+        width: 100%;
+    }
+}
